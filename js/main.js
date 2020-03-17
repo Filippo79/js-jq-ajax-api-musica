@@ -7,6 +7,7 @@ $(document).ready(function() {
     var source = $('#template-card').html();
     var templateCard = Handlebars.compile(source);
 
+
     $.ajax({
         url: 'https://flynn.boolean.careers/exercises/api/array/music',
         method: 'GET',

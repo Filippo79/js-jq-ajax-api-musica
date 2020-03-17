@@ -15,7 +15,7 @@ $(document).ready(function() {
             var albumTotali = data.response;
             for (var i = 0; i < albumTotali.length; i++) {
                 var albumSingolo = albumTotali[i];
-                console.log(albumSingolo);
+                //console.log(albumSingolo);
                 var albumSingoloTemplate = {
                     immagineAlbum: albumSingolo.poster,
                     nomeAlbum: albumSingolo.title,
@@ -30,18 +30,23 @@ $(document).ready(function() {
 
         },
         error:function () {
-            alert('Ma dove vuoi andare');
+            alert('Ma dove vuoi andare   !!!');
         }
     })
 
-    $('.select-genere').change
-
-
-
-
-
-
-
+    /*$('.select-genere').change(function () {
+        var genereSelezionato = $(this).val();
+        //console.log(genereSelezionato);
+        $('.card').each(function() {
+            if (genereSelezionato == "") {
+                $('.card').show();
+            }else if (genereSelezionato.toLowerCase() == $(this).data('genere').toLowerCase()) {
+                $(this).show();
+            }else {
+                $(this).hide();
+            }
+        }
+    });*/
 
 
 });

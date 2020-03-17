@@ -33,7 +33,7 @@ $(document).ready(function() {
             alert('Ma dove vuoi andare   !!!');
         }
     })
-
+//--------------------Non ci sono riuscito da solo ----------------
     /*$('.select-genere').change(function () {
         var genereSelezionato = $(this).val();
         //console.log(genereSelezionato);

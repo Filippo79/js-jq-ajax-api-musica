@@ -35,9 +35,9 @@ $(document).ready(function() {
         }
     })
 //--------------------Non ci sono riuscito da solo ----------------
-    /*$('.select-genere').change(function () {
+    $('.select-genere').change(function () {
         var genereSelezionato = $(this).val();
-        //console.log(genereSelezionato);
+        console.log(genereSelezionato);
         $('.card').each(function() {
             if (genereSelezionato == "") {
                 $('.card').show();
@@ -46,8 +46,8 @@ $(document).ready(function() {
             }else {
                 $(this).hide();
             }
-        }
-    });*/
+        });
+    });
 
 
 });
